@@ -1,6 +1,11 @@
 <script>
+import { NButton } from 'naive-ui'
+
 export default {
   name: 'TheWelcome',
+    components: {
+      NButton,
+    },
   props: {
     includeButton: {
       type: Boolean,
@@ -21,6 +26,7 @@ export default {
 <h1 class="text-white title">
 C-Collection
 </h1>
+<n-button>naive-ui</n-button>
 </div>
 </template>
 
