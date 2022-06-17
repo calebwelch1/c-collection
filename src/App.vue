@@ -5,7 +5,6 @@ export default {
   name: 'App',
   mounted() {
     // console.log('width:', width, 'type:' type);
-    console.log(useBreakpoints());
   },
   methods: {
     routeAtomicCss(){

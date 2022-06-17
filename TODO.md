@@ -1,5 +1,3 @@
 ## TODO
-- get sidebar links to work
-- start adding components
-- fix sidebar components being hidden when resizing back to large
-- check index.html for strange white spacing
+carousel, allow clickable to mini-article
+blood meridian, black swan, masque of red death, i have no mouth, minority report, 
