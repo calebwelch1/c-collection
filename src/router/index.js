@@ -27,7 +27,12 @@ const router = createRouter({
       name: 'contact-view',
       component: () => import('../views/ContactView.vue')
     },
-    // components
+    // media
+    {
+      path: '/blood-meridian',
+      name: 'blood-meridian',
+      component: () => import('../views/media/BloodMeridian.vue')
+    },
   ]
 })
 

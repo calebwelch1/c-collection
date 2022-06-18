@@ -26,11 +26,15 @@ export default {
 <style lang="scss">
 @import './stylesheets/index.css';
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
   font-family: 'Akshar', 'Avenir', 'Arial', 'sans-serif' !important
 }
 
+.bebas{
+  font-family: 'Bebas Neue' !important;
+}
 body{
   margin:0 !important;
   overflow-x: hidden !important;

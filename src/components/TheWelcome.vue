@@ -27,8 +27,8 @@ export default {
     };
   },
   methods: {
-    routeComponentView(){
-      this.$router.push('components');
+    routeBloodMeridian(){
+      this.$router.push('blood-meridian');
     },
   },
 }
@@ -46,25 +46,52 @@ C-Collection
   mousewheel
   style="width: 100%; height: 100%"
   >
-  <div :style="`backround:url(${west}); height: 100%; width: 100%;`">
-  <img :src="west" />
-  </div>
-  <div :style="`backround:url(${swan})`" class="c-image">
-  <button> hi </button>
-  </div>
-  <div :style="`backround:url(${future})`" class="c-image">
-  </div>
-  <div :style="`backround:url(${mask})`" class="c-image">
-  </div>
+    <div class="relative c-image">
+      <img :src="west" class="c-image"/>
+      <div class="absolute" style="top: 20%; left: 28%; font-size: 48px;">
+      <h1 class="bebas white">Blood Meridian</h1>
+      <p class="white"> An unrelenting and visceral journey through America's old west. </p>
+      <button @click="routeBloodMeridian">BLOOD MERIDIAN</button>
+      </div>
+    </div>
+    <div class="relative c-image">
+      <img :src="future" class="c-image"/>
+      <div class="absolute" style="top: 30%; left: 48%; font-size: 48px;">
+      <h1 class="bebas white">Hey There :!!!</h1>
+      </div>
+    </div>
+    <div class="relative c-image">
+      <img :src="mask" class="c-image"/>
+      <div class="absolute" style="top: 30%; left: 48%; font-size: 48px;">
+      <h1 class="bebas white">Hey There :!!!</h1>
+      </div>
+    </div>
+    <div class="relative c-image">
+      <img :src="swan" class="c-image"/>
+      <div class="absolute" style="top: 30%; left: 48%; font-size: 48px;">
+      <h1 class="bebas white">Hey There :!!!</h1>
+      </div>
+    </div>
   </n-carousel>
 </div>
 </template>
 
 <style lang="scss">
+.white {
+  color: white;
+}
 .c-image {
   object-fit: cover;
   width:100%;
   height: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
 }
 
 .title {
