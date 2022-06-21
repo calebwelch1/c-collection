@@ -15,10 +15,10 @@ export default {
 <template>
   <main>
     <div class="main">
-      <div class="col-span-12">
+      <div class="col-span-12" style="margin-left: 2rem; margin-right: 2rem;">
         <div class="justify-around flex-wrap content-container" style="">
-        <div class="flex-col" style="height: 20rem; width: 50%; border: 1px solid blue; display: block;">
-          <p>
+        <div class="flex-col" style="height: 20rem; width: 100%; border: 1px solid blue; display: block; margin-top:auto; margin-bottom: auto;">
+          <p class="content-text" style="display:block">
           Cantopop superstars Anita Mui and Leslie Cheung display the
           androgynous magnetism that made them icons as doomed lovers in
           this emblematic film of Hong Kong’s Second New Wave, directed
@@ -34,12 +34,17 @@ export default {
           both lost love and vanishing history.
           </p>
         </div>
-        <div class="flex-col" style="height: 20rem; width: 50%; border: 1px solid red; display: block;">
+        <div class="flex-col" style="height: 20rem; width: 100%; border: 1px solid red; display: block;">
         <div class="flex-row">
             <img
             :src="mainImg"
             class="art"
             />
+        </div>
+        <div class="info-box flex-row">
+        <p> Viewing Options </p>
+        <button>View Media </button>
+        <button>View Media </button>
         </div>
         </div>
         </div>
@@ -48,6 +53,11 @@ export default {
   </main>
 </template>
 <style lang="scss">
+.content-text {
+  margin-bottom: auto;
+  margin-top:auto;
+}
+
 .content-container {
   display:flex;
   flex-direction:row;
