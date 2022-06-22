@@ -128,7 +128,6 @@ height: 100vh;
 width:100vw;
 margin:0;
 justify-items: center;
-background: lightslategrey;
 display: flex;
 flex-direction: column;
 }

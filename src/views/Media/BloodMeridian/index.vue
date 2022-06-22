@@ -30,9 +30,9 @@ export default {
 <template>
   <main>
     <div class="main">
-      <div class="col-span-12" style="margin-left: 2rem; margin-right: 2rem;">
+      <div class="col-span-12" style="">
         <div class="justify-around flex-wrap content-container" style="">
-        <div class="flex-col left" style="height: 98vh; width: 100%; border: 1px solid blue; display: block; margin-top:auto; margin-bottom: auto;">
+        <div class="flex-col left" style="height: 98vh; width: 100%; display: block; margin-top:auto; margin-bottom: auto;">
           <p class="content-text" style="display:block">
           Cantopop superstars Anita Mui and Leslie Cheung display the
           androgynous magnetism that made them icons as doomed lovers in
@@ -49,8 +49,8 @@ export default {
           both lost love and vanishing history.
           </p>
         </div>
-        <div class="flex-col right" style="height: 98vh; width: 100%; border: 1px solid red; display: block;">
-        <div class="flex-row" style="margin:auto;">
+        <div class="flex-col right" style="height: 98vh; width: 100%; display: block;">
+        <div class="flex-row" style="margin:auto; margin-right: 0rem;">
             <img
             :src="mainImg"
             style="display:block; margin:auto;"
@@ -65,13 +65,13 @@ export default {
         </div>
         </div>
       </div>
-      <div id="scene-carousel" class="col-span-12" style="margin-right: 2rem;">
+      <div id="scene-carousel" class="col-span-12 flex-col" style="margin-left: 0rem;">
         <n-carousel
         direction="horizontal"
         dot-placement="bottom"
         effect="slide"
         mousewheel
-        style="width: 100%; height: 95%; display: block; margin-right: auto;"
+        style="width: 90%; height: 95%; display: block; margin-right: auto; margin-left: auto; margin-top: auto;"
         show-arrow
         >
       <img :src="red" class="c-image"/>
@@ -79,10 +79,39 @@ export default {
       <img :src="cover" class="c-image"/>
         </n-carousel>
       </div>
+      <div class="col-span-12" style="margin-left: 2rem; margin-right: 2rem;">
+        <div class="justify-around flex-wrap content-container" style="margin-top: 10vh;">
+          <div class="sub-content flex-col" style="height: 98vh; width: 100%; display: block; margin-top:auto; margin-bottom: auto;">
+        <h1 class=""> Creator </h1>
+         <div style="border-bottom: 2px solid black; width: 80%; margin-bottom: 3rem;"/>
+          <p class="content-text" style="display:block; white-space: nowrap;">
+          <strong>Author</strong> ................................. Cormac McCarthy
+          </p>
+        </div>
+        <div class="sub-content flex-col" style="height: 98vh; width: 75%; display: block; margin-top:auto; margin-bottom: auto;">
+        <h1> Related Media </h1>
+          <div class="justify-around flex-wrap" style="display:flex;flexDirection:column;gap:5rem;">
+            <div class="related-media mx-auto flex-col justify-start">
+            <div style="height: 18rem; width: 12rem; background-color: black;" />
+            <p>Title</p>
+            <p class="creator-text">Creator</p>
+            </div>
+            <div class="related-media mx-auto flex-col justify-start">
+            <div style="height: 18rem; width: 12rem; background-color: black;" />
+            <p>Title</p>
+            <p class="creator-text">Creator</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
   </main>
 </template>
 <style lang="scss">
+.pl-12{
+  padding-left: 12rem;
+}
 #scene-carousel {
   width: 100%;
   background-color:#252525;
@@ -94,7 +123,7 @@ export default {
 }
 
 .left {
-  background-color:#f6f6f6;
+  // background-color:#f6f6f6;
   width: 25rem;
 }
 
@@ -103,17 +132,40 @@ export default {
   margin-top:auto;
 }
 
+.related-media {
+  color:black;
+  display: block;
+  font-size: 2px;
+}
+
+.related-media:hover {
+    color: gold;
+    cursor: pointer;
+    display: block;
+}
+
 .content-container {
   display:flex;
   flex-direction:row;
-  gap:5rem;
 }
 
+.creator-text {
+  font-style: italic;
+  color: #8e8e8e;
+}
+
+.sub-content {
+  padding-left: 12rem;
+}
 @media screen and (max-width: 650px) {
   .content-container {
   display:flex;
   flex-direction:column;
   gap:5rem;
+  }
+
+  .sub-content {
+    padding-left: 0rem;
   }
 }
 

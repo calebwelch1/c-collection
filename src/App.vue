@@ -50,6 +50,10 @@ body{
 
 p {
   margin: 0;
+  font-size: 20px;
+}
+
+h1 {
   font-size: 25px;
 }
 
