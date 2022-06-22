@@ -3,6 +3,7 @@ import demon from '@/assets/demon.jpg'
 import red from './assets/red.jpg'
 import cormac from './assets/cormac.jpeg'
 import cover from './assets/cover.jpg'
+import Footer from '@/components/Footer.vue'
 import { NCarousel } from 'naive-ui'
 
 export default {
@@ -16,6 +17,7 @@ export default {
   },
   components: {
       NCarousel,
+      Footer,
   },
   data() {
     return {
@@ -88,23 +90,24 @@ export default {
           <strong>Author</strong> ................................. Cormac McCarthy
           </p>
         </div>
-        <div class="sub-content flex-col" style="height: 98vh; width: 75%; display: block; margin-top:auto; margin-bottom: auto;">
-        <h1> Related Media </h1>
-          <div class="justify-around flex-wrap" style="display:flex;flexDirection:column;gap:5rem;">
-            <div class="related-media mx-auto flex-col justify-start">
-            <div style="height: 18rem; width: 12rem; background-color: black;" />
-            <p>Title</p>
-            <p class="creator-text">Creator</p>
-            </div>
-            <div class="related-media mx-auto flex-col justify-start">
-            <div style="height: 18rem; width: 12rem; background-color: black;" />
-            <p>Title</p>
-            <p class="creator-text">Creator</p>
+          <div class="sub-content flex-col" style="height: 98vh; width: 75%; display: block; margin-top:auto; margin-bottom: auto;">
+          <h1> Related Media </h1>
+            <div class="justify-around flex-wrap" style="display:flex;flexDirection:column;gap:5rem;">
+              <div class="related-media mx-auto flex-col justify-start">
+              <div style="height: 18rem; width: 12rem; background-color: black;" />
+              <p>Title</p>
+              <p class="creator-text">Creator</p>
+              </div>
+              <div class="related-media mx-auto flex-col justify-start">
+              <div style="height: 18rem; width: 12rem; background-color: black;" />
+              <p>Title</p>
+              <p class="creator-text">Creator</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
+      <Footer />
     </div>
   </main>
 </template>
