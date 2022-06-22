@@ -1,5 +1,10 @@
 <script>
 import demon from '@/assets/demon.jpg'
+import red from './assets/red.jpg'
+import cormac from './assets/cormac.jpeg'
+import cover from './assets/cover.jpg'
+import { NCarousel } from 'naive-ui'
+
 export default {
   name: 'BloodMeridian',
   props:{
@@ -9,6 +14,16 @@ export default {
       default: demon,
     },
   },
+  components: {
+      NCarousel,
+  },
+  data() {
+    return {
+      cormac,
+      red,
+      cover,
+    };
+  },
 }
 </script>
 
@@ -17,7 +32,7 @@ export default {
     <div class="main">
       <div class="col-span-12" style="margin-left: 2rem; margin-right: 2rem;">
         <div class="justify-around flex-wrap content-container" style="">
-        <div class="flex-col" style="height: 20rem; width: 100%; border: 1px solid blue; display: block; margin-top:auto; margin-bottom: auto;">
+        <div class="flex-col left" style="height: 98vh; width: 100%; border: 1px solid blue; display: block; margin-top:auto; margin-bottom: auto;">
           <p class="content-text" style="display:block">
           Cantopop superstars Anita Mui and Leslie Cheung display the
           androgynous magnetism that made them icons as doomed lovers in
@@ -34,10 +49,11 @@ export default {
           both lost love and vanishing history.
           </p>
         </div>
-        <div class="flex-col" style="height: 20rem; width: 100%; border: 1px solid red; display: block;">
-        <div class="flex-row">
+        <div class="flex-col right" style="height: 98vh; width: 100%; border: 1px solid red; display: block;">
+        <div class="flex-row" style="margin:auto;">
             <img
             :src="mainImg"
+            style="display:block; margin:auto;"
             class="art"
             />
         </div>
@@ -49,10 +65,39 @@ export default {
         </div>
         </div>
       </div>
+      <div id="scene-carousel" class="col-span-12" style="margin-right: 2rem;">
+        <n-carousel
+        direction="horizontal"
+        dot-placement="bottom"
+        effect="slide"
+        mousewheel
+        style="width: 100%; height: 95%; display: block; margin-right: auto;"
+        show-arrow
+        >
+      <img :src="red" class="c-image"/>
+      <img :src="cormac" class="c-image"/>
+      <img :src="cover" class="c-image"/>
+        </n-carousel>
+      </div>
     </div>
   </main>
 </template>
 <style lang="scss">
+#scene-carousel {
+  width: 100%;
+  background-color:#252525;
+  height: 90vh;
+}
+.right {
+  background-color:#d7d7d7;
+  width: 25rem;
+}
+
+.left {
+  background-color:#f6f6f6;
+  width: 25rem;
+}
+
 .content-text {
   margin-bottom: auto;
   margin-top:auto;
@@ -88,5 +133,11 @@ export default {
   margin-bottom: 5vh;
   padding-right: auto;
   overflow: hidden;
+}
+
+.c-image {
+  object-fit: cover;
+  width:100%;
+  height: 95%;
 }
 </style>

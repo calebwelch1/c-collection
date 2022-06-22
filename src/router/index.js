@@ -31,7 +31,7 @@ const router = createRouter({
     {
       path: '/blood-meridian',
       name: 'blood-meridian',
-      component: () => import('../views/media/BloodMeridian.vue')
+      component: () => import('../views/media/BloodMeridian/index.vue')
     },
   ]
 })
