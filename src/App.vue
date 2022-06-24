@@ -1,10 +1,26 @@
 <script>
-import { nextTick } from 'vue'
-import { RouterLink, RouterView } from 'vue-router'
+import { nextTick, h } from 'vue'
+import { RouterLink, RouterView, } from 'vue-router'
+import { NMenu } from 'naive-ui'
+
+
+// const menuOptions = [
+//   {
+//     label: () => h("a", {
+//       href: "https://en.wikipedia.org/wiki/Hear_the_Wind_Sing",
+//       target: "_blank",
+//       rel: "noopenner noreferrer"
+//     }, "Hear the Wind Sing"),
+//     key: "hear-the-wind-sing",
+//   },
+// ]
 export default {
   name: 'App',
   mounted() {
     // console.log('width:', width, 'type:' type);
+  },
+  components: {
+    NMenu,
   },
   methods: {
     routeAtomicCss(){
@@ -14,13 +30,51 @@ export default {
   data() {
     return {
       hi: true,
-    }
+      menuOptions: [
+      {
+        label: () => h(RouterLink, {
+          to: {
+            name: 'home',
+          },
+        }, "Home"),
+        key: "home",
+      },
+      {
+        key: 'divider-1',
+        type: 'divider',
+        props: {
+          style: {
+            marginLeft: '32px'
+          }
+        }
+      },
+      {
+        label: () => h(RouterLink, {
+          to: {
+            name: 'about-view',
+          },
+        }, "About"),
+        key: "about",
+      },
+       {
+        label: () => h(RouterLink, {
+          to: {
+            name: 'contact-view',
+          },
+        }, "Contact"),
+        key: "contact",
+      },
+    ],
+    };
   },
 }
 </script>
 
 <template>
+<div style="position:relative;">
+ <n-menu class="menu" :inverted="true" v-model:value="activeKey" mode="horizontal" :options="menuOptions"  style="position:absolute; top: 2rem; right: 4rem; z-index: 99;"/>
   <RouterView style="width: 100%;"/>
+</div>
 </template>
 
 <style lang="scss">
@@ -48,6 +102,10 @@ body{
   overflow-x: hidden !important;
 }
 
+a:visited {
+  color: #fff !important;
+}
+
 p {
   margin: 0;
   font-size: 20px;
@@ -55,6 +113,16 @@ p {
 
 h1 {
   font-size: 25px;
+}
+
+.n-menu.n-menu--horizontal .n-menu-item-content .n-menu-item-content-header a {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+
+  &:hover {
+  color: #b4841e !important;
+  }
 }
 
 @media screen and (max-width: 650px) {

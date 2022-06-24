@@ -138,11 +138,11 @@ export default {
 .related-media {
   color:black;
   display: block;
-  font-size: 2px;
+  font-size: 12px;
 }
 
 .related-media:hover {
-    color: gold;
+    color: #b4841e;
     cursor: pointer;
     display: block;
 }

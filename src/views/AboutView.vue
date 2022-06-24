@@ -1,9 +1,11 @@
-<script setup>
-import TheWelcome from '@/components/TheWelcome.vue'
+<script >
+export default {
+  name: 'About',
+}
 </script>
 
 <template>
   <main>
-    <TheWelcome :includeButton="false"/>
+    About
   </main>
 </template>
