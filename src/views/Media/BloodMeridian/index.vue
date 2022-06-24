@@ -24,6 +24,8 @@ export default {
       cormac,
       red,
       cover,
+      shareLink: 'calebwelch1.github.io/c-collection/blood-meridian',
+      amazonLink: 'https://www.amazon.com/Blood-Meridian-Evening-Redness-West/dp/0679728759',
     };
   },
 }
@@ -35,42 +37,50 @@ export default {
       <div class="col-span-12" style="height: 20rem; width: 100%; background: #252525; margin-top: 0rem;">
       <p style="visibility: hidden; margin-top: 5rem;"> invisible </p>
       </div>
-      <div class="col-span-12" style="">
-        <div class="justify-around flex-wrap content-container" style="">
-        <div class="flex-col left" style="height: 98vh; width: 100%; display: block; margin-top:auto; margin-bottom: auto;">
-          <p class="content-text" style="display:block">
-          Cantopop superstars Anita Mui and Leslie Cheung display the
-          androgynous magnetism that made them icons as doomed lovers in
-          this emblematic film of Hong Kong’s Second New Wave, directed
-          by pioneering queer melodrama master Stanley Kwan. Rouge bridges
-          past and present in its tragic romance between a humble courtesan
-          and the wayward scion of a wealthy family, who embrace death by
-          suicide pact amid the opulent teahouses of 1930s Hong Kong.
-          Fifty years later, she returns to the city-state to find him,
-          drawing a young contemporary couple (Alex Man and Emily Chu) into
-          her quest to rekindle a passion that may be as illusory as time itself.
-          With its lush mise-en-scène and transcendently melancholy mood, this
-          sensuous ghost story is an exquisite, enduringly resonant elegy for
-          both lost love and vanishing history.
-          </p>
+      <div id="top" class="col-span-12 my-auto flex-col" style="display:block;">
+        <div class="grid-12" style="">
+        <div class="flex-col left" style="height: 100vh; width: 100%; display: block; margin-top:auto; margin-bottom: auto; padding-left: 2rem; padding-right: 2rem;">
+          <div class="grid-12">
+          <div id="contain-share">
+            <p> Share </p>
+            <a>link</a>
+          </div>
+          <div id="contain-text">
+            <p class="author gold"> Cormac McCarthy </p>
+            <h1 class="media-title"> Blood Meridian </h1>
+              <p class="content-text" style="display:block">
+              --- Cantopop superstars Anita Mui and Leslie Cheung display the
+              androgynous magnetism that made them icons as doomed lovers in
+              this emblematic film of Hong Kong’s Second New Wave, directed
+              by pioneering queer melodrama master Stanley Kwan. Rouge bridges
+              past and present in its tragic romance between a humble courtesan
+              and the wayward scion of a wealthy family, who embrace death by
+              suicide pact amid the opulent teahouses of 1930s Hong Kong.
+              Fifty years later, she returns to the city-state to find him,
+              drawing a young contemporary couple (Alex Man and Emily Chu) into
+              her quest to rekindle a passion that may be as illusory as time itself.
+              With its lush mise-en-scène and transcendently melancholy mood, this
+              sensuous ghost story is an exquisite, enduringly resonant elegy for
+              both lost love and vanishing history.
+              </p>
+          </div>
+          <div class="col-span-1" />
+          </div>
         </div>
-        <div class="flex-col right" style="height: 98vh; width: 100%; display: block;">
-        <div class="flex-row" style="margin:auto; margin-right: 0rem;">
-            <img
-            :src="mainImg"
-            style="display:block; margin:auto;"
-            class="art"
-            />
-        </div>
-        <div class="info-box flex-row">
-        <p> Viewing Options </p>
-        <button>View Media </button>
-        <button>View Media </button>
-        </div>
+        <div class="flex-col right" style="height: 100vh; width: 100%; display: block margin-top: auto; margin-bottom: auto;">
+              <img
+              :src="mainImg"
+              style="display:block; margin-top:2rem; margin-bottom: 2rem;"
+              class="art mx-auto"
+              />
+          <div class="info-box flex-col mx-auto">
+          <p> Viewing Options </p>
+          <a :href="amazonLink" target="_blank"><button class="view-button">Amazon</button></a>
+          </div>
         </div>
         </div>
       </div>
-      <div id="scene-carousel" class="col-span-12 flex-col" style="margin-left: 0rem;">
+      <div id="scene-carousel" class="col-span-12 flex-col my-auto" style="margin-left: 0rem;">
         <n-carousel
         direction="horizontal"
         dot-placement="bottom"
@@ -79,9 +89,9 @@ export default {
         style="width: 90%; height: 95%; display: block; margin-right: auto; margin-left: auto; margin-top: auto;"
         show-arrow
         >
-      <img :src="red" class="c-image"/>
-      <img :src="cormac" class="c-image"/>
-      <img :src="cover" class="c-image"/>
+          <img :src="red" class="c-image"/>
+          <img :src="cormac" class="c-image"/>
+          <img :src="cover" class="c-image"/>
         </n-carousel>
       </div>
       <div class="col-span-12" style="margin-left: 2rem; margin-right: 2rem;">
@@ -115,6 +125,22 @@ export default {
   </main>
 </template>
 <style lang="scss">
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.grid-12 {
+  display: grid;
+grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+.gold {
+  color: #b4841e;
+}
+
+.grey {
+  color:#252525;
+}
+
 .pl-12{
   padding-left: 12rem;
 }
@@ -123,14 +149,27 @@ export default {
   background-color:#252525;
   height: 90vh;
 }
-.right {
-  background-color:#d7d7d7;
+
+.media-title {
+  font-size: 48px;
+  margin-top: 1rem;
+}
+
+.author {
+  font-size: 20px;
+  font-weight: 700;
+}
+.left {
+  // background-color:#f6f6f6;
+  grid-column: span 7/span 7;
   width: 25rem;
 }
 
-.left {
-  // background-color:#f6f6f6;
+.right {
+  background-color:#d7d7d7;
   width: 25rem;
+  grid-column: span 5/span 5;
+
 }
 
 .content-text {
@@ -163,6 +202,15 @@ export default {
 .sub-content {
   padding-left: 12rem;
 }
+
+#contain-share {
+    grid-column: span 2/span 2;
+}
+
+#contain-text {
+    grid-column: span 9/span 9;
+
+}
 @media screen and (max-width: 650px) {
   .content-container {
   display:flex;
@@ -173,11 +221,57 @@ export default {
   .sub-content {
     padding-left: 0rem;
   }
+
+  #contain-share {
+    grid-column: span 12/span 12;
+}
+
+#contain-text {
+    grid-column: span 11/span 11;
+
+}
+
+.left {
+  // background-color:#f6f6f6;
+  grid-column: span 12/span 12;
+  width: 25rem;
+}
+
+.right {
+  background-color:#d7d7d7;
+  width: 25rem;
+  grid-column: span 12/span 12;
+
+}
+}
+
+.view-button {
+  display: block;
+    width: 14rem;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    line-height: 1.25;
+    letter-spacing: .6px;
+    text-align: center;
+    padding: 22px 10px;
+    background: #b4841e;
+    transition: all .5s cubic-bezier(.23,1,.32,1);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+
+    &:hover {
+      background: #252525;
+      color: #fff;
+    }
 }
 
 .art {
   height: 35rem;
-  width: 25rem;
+  width: 26rem;
   margin-left: auto;
   margin-right: auto;
 }

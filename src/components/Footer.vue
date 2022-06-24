@@ -15,7 +15,7 @@ export default {
 }
 </script>
 <template>
-      <div class="col-span-12" style="margin-left: 0rem; margin-right: 0rem; background-color:#252525; color: #fff;">
+      <div class="col-span-12" style="margin-left: 0rem; margin-right: 0rem; background-color:#252525; color: #fff; height: 100%;">
         <div class="justify-around flex-wrap content-container" style="margin-top: 10vh;">
           <div class="sub-content flex-col justify-between" style="height: 98vh; width: 100%; display: block; margin-top:auto; margin-bottom: auto;">
         <h1 style="font-size: 42px; font-weight: 700;"> C-Collection </h1>
