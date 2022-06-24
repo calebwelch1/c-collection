@@ -32,6 +32,9 @@ export default {
 <template>
   <main>
     <div class="main">
+      <div class="col-span-12" style="height: 20rem; width: 100%; background: #252525; margin-top: 0rem;">
+      <p style="visibility: hidden; margin-top: 5rem;"> invisible </p>
+      </div>
       <div class="col-span-12" style="">
         <div class="justify-around flex-wrap content-container" style="">
         <div class="flex-col left" style="height: 98vh; width: 100%; display: block; margin-top:auto; margin-bottom: auto;">

@@ -125,6 +125,16 @@ h1 {
   }
 }
 
+.main .n-menu.n-menu--horizontal .n-menu-item-content .n-menu-item-content-header a {
+  color: #252525;
+  font-size: 28px;
+  font-weight: 500;
+
+  &:hover {
+  color: #b4841e !important;
+  }
+}
+
 @media screen and (max-width: 650px) {
   p {
     margin: 0;
