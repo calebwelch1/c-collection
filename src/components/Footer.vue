@@ -1,4 +1,5 @@
 <script>
+import { RouterLink } from 'vue-router'
 export default {
   name: 'Footer',
   data() {
@@ -41,15 +42,15 @@ export default {
         <div class="sub-content flex-col" style="height: 98vh; width: 75%; display: block; margin-top:auto; margin-bottom: auto;">
         <h1> Links </h1>
          <div style="border-bottom: 2px solid #fff; width: 80%; margin-bottom: 3rem;"/>
-        <p class="content-text" style="display:block; white-space: nowrap;">
+        <router-link to="/" class="content-text" style="display:block; white-space: nowrap; font-size: 20px; margin-top: 1rem;">
           <strong>Home</strong>
-          </p>
-          <p class="content-text" style="display:block; white-space: nowrap;">
+          </router-link>
+          <router-link to="/about" class="content-text" style="display:block; white-space: nowrap; font-size: 20px; margin-top: 1rem;">
           <strong>About</strong>
-          </p>
-          <p class="content-text" style="display:block; white-space: nowrap;">
+          </router-link>
+          <router-link to="/contact" class="content-text" style="display:block; white-space: nowrap; font-size: 20px; margin-top: 1rem;">
           <strong>Contact</strong>
-          </p>
+          </router-link>
         </div>
       </div>
       </div>

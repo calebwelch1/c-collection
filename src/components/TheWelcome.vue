@@ -48,35 +48,64 @@ C-Collection
   >
     <div class="relative c-image">
       <img :src="west" class="c-image"/>
-      <div class="absolute" style="top: 20%; left: 28%; font-size: 48px;">
-      <h1 class="bebas white">Blood Meridian</h1>
-      <p class="white"> An unrelenting and visceral journey through America's old west. </p>
-      <button @click="routeBloodMeridian">BLOOD MERIDIAN</button>
+      <div class="absolute flex-col title-position" style="font-size: 48px;">
+      <h1 class="bebas white font-size-48 mx-auto" style="margin-bottom: 0rem;">Blood Meridian</h1>
+      <p class="white font-size-20"> An unrelenting and visceral journey through America's old west. </p>
+      <button class="title-button" @click="routeBloodMeridian">BLOOD MERIDIAN</button>
       </div>
     </div>
     <div class="relative c-image">
       <img :src="future" class="c-image"/>
-      <div class="absolute" style="top: 30%; left: 48%; font-size: 48px;">
-      <h1 class="bebas white">Hey There :!!!</h1>
-      </div>
     </div>
     <div class="relative c-image">
       <img :src="mask" class="c-image"/>
-      <div class="absolute" style="top: 30%; left: 48%; font-size: 48px;">
-      <h1 class="bebas white">Hey There :!!!</h1>
-      </div>
     </div>
     <div class="relative c-image">
       <img :src="swan" class="c-image"/>
-      <div class="absolute" style="top: 30%; left: 48%; font-size: 48px;">
-      <h1 class="bebas white">Hey There :!!!</h1>
-      </div>
     </div>
   </n-carousel>
 </div>
 </template>
 
 <style lang="scss">
+.title-button {
+  display: block;
+    width: 14rem;
+    color: #252525;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    line-height: 1.25;
+    letter-spacing: .6px;
+    text-align: center;
+    padding: 22px 10px;
+    background: #fff;
+    transition: all .5s cubic-bezier(.23,1,.32,1);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+
+    &:hover {
+      background: #252525;
+      color: #fff;
+    }
+}
+.title-position {
+  top: 30%;
+  left: 40%;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.font-size-48 {
+  font-size: 48px !important;
+}
+
+.font-size-20 {
+  font-size: 20px !important;
+}
 .white {
   color: white;
 }
