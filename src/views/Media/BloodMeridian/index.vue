@@ -34,18 +34,18 @@ export default {
 <template>
   <main>
     <div class="main">
-      <div class="col-span-12" style="height: 20rem; width: 100%; background: #252525; margin-top: 0rem;">
-      <p style="visibility: hidden; margin-top: 5rem;"> invisible </p>
+      <div class="col-span-12" style="height: 6rem; width: 100%; background: #252525; margin-top: 0rem;">
+      <p style="visibility: hidden;"> invisible </p>
       </div>
       <div id="top" class="col-span-12 my-auto flex-col" style="display:block;">
         <div class="grid-12" style="">
-        <div class="flex-col left" style="height: 100vh; width: 100%; display: block; margin-top:auto; margin-bottom: auto; padding-left: 2rem; padding-right: 2rem;">
-          <div class="grid-12">
+        <div class="flex-col left" style="height: auto; width: 100%; display: block; margin-top:auto; margin-bottom: auto; padding-left: 2rem; padding-right: 2rem; padding-top: 0rem;">
+          <div class="grid-12" style="padding-left: 2rem; padding-right: 2rem;">
           <div id="contain-share">
             <p> Share </p>
             <a>link</a>
           </div>
-          <div id="contain-text">
+          <div id="contain-text" style="padding-left: 4rem; padding-right: 4rem;">
             <p class="author gold"> Cormac McCarthy </p>
             <h1 class="media-title"> Blood Meridian </h1>
               <p class="content-text" style="display:block">
@@ -67,7 +67,7 @@ export default {
           <div class="col-span-1" />
           </div>
         </div>
-        <div class="flex-col right" style="height: 100vh; width: 100%; display: block margin-top: auto; margin-bottom: auto;">
+        <div class="flex-col right" style="height: auto; width: 100%; display: block margin-top: auto; margin-bottom: auto; padding-top: 4rem; padding-bottom: 2rem;">
               <img
               :src="mainImg"
               style="display:block; margin-top:2rem; margin-bottom: 2rem;"
@@ -129,7 +129,7 @@ export default {
 .main{
 display: grid;
 grid-template-columns: repeat(12, minmax(0, 1fr));
-height: 100vh;
+height: auto;
 width:100vw;
 margin:0;
 justify-items: center;
