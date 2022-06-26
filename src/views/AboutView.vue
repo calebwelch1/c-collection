@@ -76,7 +76,7 @@ export default {
     </div>
   </main>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 a {
   color: black !important;
 }
