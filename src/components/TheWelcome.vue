@@ -5,6 +5,7 @@ import west from '@/assets/background/west.jpg'
 import mask from '@/assets/background/mask.jpg'
 import future from '@/assets/background/future.jpg'
 import swan from '@/assets/background/swan.jpg'
+import swanVid from '@/assets/video/black_swan_trim.mp4'
 
 export default {
   name: 'TheWelcome',
@@ -24,6 +25,7 @@ export default {
       mask,
       future,
       swan,
+      swanVid,
     };
   },
   methods: {
@@ -46,6 +48,10 @@ C-Collection
   mousewheel
   style="width: 100%; height: 100%"
   >
+    <div class="relative home-background-video-container">
+      <video :src="swanVid"
+      autoplay="true" loop="true" preload="auto" muted="true" width="auto" height="auto" class="home-background-video"/>
+    </div>
     <div class="relative c-image">
       <img :src="west" class="c-image"/>
       <div class="absolute flex-col title-position" style="font-size: 48px;">
@@ -60,14 +66,25 @@ C-Collection
     <div class="relative c-image">
       <img :src="mask" class="c-image"/>
     </div>
-    <div class="relative c-image">
-      <img :src="swan" class="c-image"/>
-    </div>
   </n-carousel>
 </div>
 </template>
 
 <style lang="scss">
+.is-home-background-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.is-home-background-video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .title-button {
   display: block;
     width: 14rem;
