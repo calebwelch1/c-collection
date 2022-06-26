@@ -18,7 +18,7 @@ export default {
   data() {
     return {
       shareLink: 'calebwelch1.github.io/c-collection/',
-      amazonLink: 'calebwelch1.github.io',
+      amazonLink: 'https://calebwelch1.github.io',
     };
   },
   methods: {
