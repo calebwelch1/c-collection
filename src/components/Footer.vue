@@ -15,34 +15,34 @@ export default {
 }
 </script>
 <template>
-      <div class="col-span-12" style="margin-left: 0rem; margin-right: 0rem; background-color:#252525; color: #fff; height: auto;">
-        <div class="justify-around flex-wrap content-container" style="">
-          <div class="sub-content flex-col justify-between" style="height: 98vh; width: 100%; display: block; margin-top:auto; margin-bottom: auto;">
-        <h1 style="font-size: 42px; font-weight: 700;"> C-Collection </h1>
-          <div class="flex-col" style=" margin-top: 50vh;">
-          <p>Sign up for C-Collection Newsletter</p>
-          <p style="font-style:italic; font-size: 16px; margin-top: 1rem;">Get info about new releases, or my online <br> publication C-C </p>
-            <div class="flex-row" style="margin-top: 1rem;">
-            <input class="email-input" type="email" name="email" placeholder="E-mail Address" />
-            <button class="email-button"> Sign Up </button>
+      <div class="col-span-12" style="margin-left: 0rem; margin-right: 0rem; background-color:#252525; color: #fff; height: auto; width: auto;">
+        <div class="justify-around flex-wrap content-container flex-row" style="height: 100%;">
+          <div class="sub-content flex-col justify-between" style="height: auto; width: 100%; display: block; margin-top:auto; margin-bottom: auto; padding-left: 4rem;">
+            <h1 style="font-size: 42px; font-weight: 700;"> C-Collection </h1>
+            <div class="flex-col" style=" margin-top: 50vh;">
+            <p>Sign up for C-Collection Newsletter</p>
+            <p style="font-style:italic; font-size: 16px; margin-top: 1rem;">Get info about new releases, or my online <br> publication C-C </p>
+              <div class="flex-row" style="margin-top: 1rem;">
+              <input class="email-input" type="email" name="email" placeholder="E-mail Address" />
+              <button class="email-button"> Sign Up </button>
+              </div>
+            <p> Follow Me </p>
+            <div class="flex-row">
+              <a href="https://www.linkedin.com/in/caleb-welch-502851121/" target="_blank" class="h-3 w-3"
+              style="border-radius: 9999px; margin: 1rem; margin-left: 0rem;">
+                <img class="h-2 w-2 filter-white" src="@/assets/icons/linkedin.svg" style="margin-top:0.4rem; margin: 1rem;" alt="images made by https://www.flaticon.com"/>
+              </a>
+              <a href="https://github.com/calebwelch1" target="_blank" class="h-3 w-3"
+              style="border-radius: 9999px; margin: 1rem;">
+                <img class="h-2 w-2 filter-white" src="@/assets/icons/github.png" style="margin-top:0.4rem; margin: 1rem;" alt="images made by https://www.flaticon.com"/>
+              </a>
             </div>
-          <p> Follow Me </p>
-          <div class="flex-row">
-            <a href="https://www.linkedin.com/in/caleb-welch-502851121/" target="_blank" class="h-3 w-3"
-            style="border-radius: 9999px; margin: 1rem; margin-left: 0rem;">
-              <img class="h-2 w-2 filter-white" src="@/assets/icons/linkedin.svg" style="margin-top:0.4rem; margin: 1rem;" alt="images made by https://www.flaticon.com"/>
-            </a>
-            <a href="https://github.com/calebwelch1" target="_blank" class="h-3 w-3"
-            style="border-radius: 9999px; margin: 1rem;">
-              <img class="h-2 w-2 filter-white" src="@/assets/icons/github.png" style="margin-top:0.4rem; margin: 1rem;" alt="images made by https://www.flaticon.com"/>
-            </a>
-          </div>
-          </div>
+            </div>
         </div>
-        <div class="sub-content flex-col" style="height: 98vh; width: 75%; display: block; margin-top:auto; margin-bottom: auto;">
-        <h1> Links </h1>
+        <div class="sub-content flex-col" style="height: auto; width: 75%; display: block; margin-top:auto; margin-bottom: auto; padding-left: 4rem;">
+          <h1> Links </h1>
          <div style="border-bottom: 2px solid #fff; width: 80%; margin-bottom: 3rem;"/>
-        <router-link to="/" class="content-text" style="display:block; white-space: nowrap; font-size: 20px; margin-top: 1rem;">
+          <router-link to="/" class="content-text" style="display:block; white-space: nowrap; font-size: 20px; margin-top: 1rem;">
           <strong>Home</strong>
           </router-link>
           <router-link to="/about" class="content-text" style="display:block; white-space: nowrap; font-size: 20px; margin-top: 1rem;">
