@@ -5,7 +5,7 @@ import west from '@/assets/background/west.jpg'
 import mask from '@/assets/background/mask.jpg'
 import future from '@/assets/background/future.jpg'
 import swan from '@/assets/background/swan.jpg'
-import swanVid from '@/assets/video/black_swan_trim.mp4'
+import swanVid from '@/assets/video/black_swan_cut.mp4'
 
 export default {
   name: 'TheWelcome',
@@ -48,9 +48,9 @@ C-Collection
   mousewheel
   style="width: 100%; height: 100%"
   >
-    <div class="relative home-background-video-container">
-      <video :src="swanVid"
-      autoplay="true" loop="true" preload="auto" muted="true" width="auto" height="auto" class="home-background-video"/>
+    <div class="relative" style="height: 100%; width: 100%;">
+      <video :src="swanVid" class="c-image"
+      autoplay="true" loop="true" preload="auto" muted="true" type="video/mp4"/>
     </div>
     <div class="relative c-image">
       <img :src="west" class="c-image"/>
