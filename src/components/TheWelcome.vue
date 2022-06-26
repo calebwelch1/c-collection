@@ -37,6 +37,9 @@ export default {
     routeYourName(){
       this.$router.push('your-name');
     },
+    routeBlackSwan(){
+      this.$router.push('black-swan');
+    },
   },
 }
 </script>
@@ -73,10 +76,15 @@ C-Collection
     <div class="relative" style="height: 100%; width: 100%;">
       <video :src="swanVid" class="c-image"
       autoplay="true" loop="true" preload="auto" muted="true" type="video/mp4"/>
+      <div class="absolute flex-col title-position" style="font-size: 48px;">
+        <h1 class="bebas white font-size-48 mx-auto" style="margin-bottom: 0rem;">Black Swan</h1>
+        <p class="white font-size-20 mx-auto">Directed by Darren Aronofsky</p>
+        <button class="title-button" @click="routeBlackSwan">Black Swan</button>
+      </div>
     </div>
-    <div class="relative c-image">
+    <!--<div class="relative c-image">
       <img :src="future" class="c-image"/>
-    </div>
+    </div> -->
   </n-carousel>
 </div>
 </template>

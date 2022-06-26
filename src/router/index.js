@@ -39,6 +39,11 @@ const router = createRouter({
       name: 'your-name',
       component: () => import('../views/media/YourName/index.vue')
     },
+    {
+      path: '/black-swan',
+      name: 'black-swan',
+      component: () => import('../views/media/BlackSwan/index.vue')
+    },
   ]
 })
 

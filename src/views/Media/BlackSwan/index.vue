@@ -1,8 +1,7 @@
 <script>
 import demon from '@/assets/demon.jpg'
-import red from './assets/red.jpg'
-import cormac from './assets/cormac.jpeg'
-import cover from './assets/cover.jpg'
+import cover from './assets/black_swan_cover.jpg'
+import blackSwanTrailer from './assets/black-swan-trailer.mp4'
 import Footer from '@/components/Footer.vue'
 import { NCarousel } from 'naive-ui'
 
@@ -21,11 +20,10 @@ export default {
   },
   data() {
     return {
-      cormac,
-      red,
+      blackSwanTrailer,
       cover,
-      shareLink: 'calebwelch1.github.io/c-collection/blood-meridian',
-      amazonLink: 'https://www.amazon.com/Blood-Meridian-Evening-Redness-West/dp/0679728759',
+      shareLink: 'calebwelch1.github.io/c-collection/black-swan',
+      amazonLink: 'https://www.amazon.com/gp/video/detail/B004Q08BE2/ref=atv_dp_share_cu_r',
     };
   },
   methods: {
@@ -49,12 +47,14 @@ export default {
           <div id="contain-share">
             <p> Share </p>
             <img @click="copyText" class="h-2 w-2" src="@/assets/icons/link.png" style="margin-top:0.4rem; margin: 1rem; cursor: pointer;" alt="images made by https://www.flaticon.com - Creaticca Creative Agency"/>
-            <p style="font-size: 18px; color: #cdcdcb; margin-bottom: 1rem;"> Book Info </p>
+            <p style="font-size: 18px; color: #cdcdcb; margin-bottom: 1rem;"> Film Info </p>
             <p style="font-size: 16px; color: #8e8e8e;"> American </p>
-            <p style="font-size: 16px; color: #8e8e8e;"> Published 1985 </p>
+            <p style="font-size: 16px; color: #8e8e8e;"> 2010 </p>
+            <p style="font-size: 16px; color: #8e8e8e;"> R </p>
+            <p style="font-size: 16px; color: #8e8e8e;"> 108 minutes </p>
           </div>
           <div id="contain-text" style="padding-left: 4rem; padding-right: 4rem;">
-            <p class="author gold"> Cormac McCarthy </p>
+            <p class="author gold"> Darren Aronofsky </p>
             <h1 class="media-title"> Black Swan </h1>
               <p class="content-text" style="display:block">
               --- Black Swan
@@ -85,8 +85,7 @@ export default {
         style="width: 80%; height: 85%; display: block; margin:auto;"
         show-arrow
         >
-          <img :src="red" class="c-image"/>
-          <img :src="cormac" class="c-image"/>
+          <video :src="blackSwanTrailer" class="c-image" controls preload="auto" type="video/mp4"/>
           <img :src="cover" class="c-image"/>
         </n-carousel>
       </div>
@@ -96,7 +95,7 @@ export default {
             <h1 class=""> Creator </h1>
             <div style="border-bottom: 2px solid black; width: 80%; margin-bottom: 3rem;"/>
             <p class="content-text" style="display:block; white-space: nowrap;">
-            <strong>Director</strong> ................................. <br>
+            <strong>Director</strong> ................................. Darren Aronofsky <br>
             </p>
           </div>
           <div class="sub-content flex-col" style="height: 98vh; width: 100%; display: block; margin-top:auto; margin-bottom: auto; min-width: 0rem;">
