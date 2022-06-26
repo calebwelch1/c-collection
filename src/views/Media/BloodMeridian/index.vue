@@ -80,13 +80,13 @@ export default {
         </div>
         </div>
       </div>
-      <div id="scene-carousel" class="col-span-12 flex-col my-auto" style="margin-left: 0rem;">
+      <div id="scene-carousel" class="col-span-12 flex-col my-auto" style="margin-left: 0rem; height: 100vh;">
         <n-carousel
         direction="horizontal"
         dot-placement="bottom"
         effect="slide"
         mousewheel
-        style="width: 90%; height: 95%; display: block; margin-right: auto; margin-left: auto; margin-top: auto;"
+        style="width: 80%; height: 85%; display: block; margin:auto;"
         show-arrow
         >
           <img :src="red" class="c-image"/>
@@ -94,25 +94,25 @@ export default {
           <img :src="cover" class="c-image"/>
         </n-carousel>
       </div>
-      <div class="col-span-12" style="margin-left: 2rem; margin-right: 2rem;">
-        <div class="justify-around flex-wrap content-container" style="margin-top: 10vh;">
+      <div class="col-span-12" style="margin-left: 2rem; margin-right: 2rem; height: auto; width: 100;">
+        <div class="justify-around flex-wrap content-container" style="padding-top: 6rem;">
           <div class="sub-content flex-col" style="height: 98vh; width: 100%; display: block; margin-top:auto; margin-bottom: auto;">
-        <h1 class=""> Creator </h1>
-         <div style="border-bottom: 2px solid black; width: 80%; margin-bottom: 3rem;"/>
-          <p class="content-text" style="display:block; white-space: nowrap;">
-          <strong>Author</strong> ................................. Cormac McCarthy
-          </p>
-        </div>
-          <div class="sub-content flex-col" style="height: 98vh; width: 75%; display: block; margin-top:auto; margin-bottom: auto;">
-          <h1> Related Media </h1>
-            <div class="justify-around flex-wrap" style="display:flex;flexDirection:column;gap:5rem;">
+            <h1 class=""> Creator </h1>
+            <div style="border-bottom: 2px solid black; width: 80%; margin-bottom: 3rem;"/>
+            <p class="content-text" style="display:block; white-space: nowrap;">
+            <strong>Author</strong> ................................. Cormac McCarthy
+            </p>
+          </div>
+          <div class="sub-content flex-col" style="height: 98vh; width: 100%; display: block; margin-top:auto; margin-bottom: auto; min-width: 0rem;">
+            <h1 style="margin-bottom: 3rem;"> Related Media </h1>
+            <div class="flex-wrap related-media-flex" style=";">
               <div class="related-media mx-auto flex-col justify-start">
-              <div style="height: 18rem; width: 12rem; background-color: black;" />
+              <div style="height: 15rem; width: 9rem; background-color: black;" />
               <p>Title</p>
               <p class="creator-text">Creator</p>
               </div>
               <div class="related-media mx-auto flex-col justify-start">
-              <div style="height: 18rem; width: 12rem; background-color: black;" />
+              <div style="height: 15rem; width: 9rem; background-color: black;" />
               <p>Title</p>
               <p class="creator-text">Creator</p>
               </div>
@@ -125,6 +125,18 @@ export default {
   </main>
 </template>
 <style lang="scss">
+
+.main{
+display: grid;
+grid-template-columns: repeat(12, minmax(0, 1fr));
+height: 100vh;
+width:100vw;
+margin:0;
+justify-items: center;
+display: flex;
+flex-direction: column;
+}
+
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
@@ -211,6 +223,11 @@ grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-column: span 9/span 9;
 
 }
+
+.related-media-flex {
+  display:flex;
+  flex-direction:row;
+}
 @media screen and (max-width: 650px) {
   .content-container {
   display:flex;
@@ -242,6 +259,11 @@ grid-template-columns: repeat(12, minmax(0, 1fr));
   width: 25rem;
   grid-column: span 12/span 12;
 
+}
+
+.related-media-flex {
+  display:flex;
+  flex-direction:column;
 }
 }
 
