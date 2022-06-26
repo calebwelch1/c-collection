@@ -1,5 +1,5 @@
 <script>
-import demon from '@/assets/demon.jpg'
+import skull from '@/assets/background/skull-watercolor.jpg'
 import Footer from '@/components/Footer.vue'
 import { NCarousel } from 'naive-ui'
 
@@ -9,7 +9,7 @@ export default {
     mainImg: {
       type: String,
       required:false,
-      default: demon,
+      default: skull,
     },
   },
   components: {
@@ -19,7 +19,6 @@ export default {
     return {
       shareLink: 'calebwelch1.github.io/c-collection/',
       amazonLink: 'calebwelch1.github.io',
-      demon,
     };
   },
   methods: {
@@ -52,7 +51,7 @@ export default {
             <h1 class="media-title"> C-Collection </h1>
               <p class="content-text" style="display:block">
               --- C-Collection is a project I challenged myself to make in just under a week of development time. I seek to 
-              simultaneously flex my front-end development skills by mimicking the <a> Criterion Collection </a> website and
+              simultaneously flex my front-end development skills by mimicking the <a target="_blank" href="https://www.criterion.com/"> Criterion Collection </a> website and
               create a collection of media that has shaped my tastes and perspectives on culture and art. I aim to continue to
               make quality of life updates to this site as well as add additional posts for as long as I see fit.
               </p>
@@ -62,12 +61,12 @@ export default {
         </div>
         <div class="flex-col right" style="height: auto; width: 100%; display: block margin-top: auto; margin-bottom: auto; padding-top: 4rem; padding-bottom: 2rem;">
               <img
-              :src="demon"
+              :src="mainImg"
               style="display:block; margin-top:2rem; margin-bottom: 2rem;"
               class="art mx-auto"
               />
           <div class="info-box flex-col mx-auto">
-          <p> Visit Me </p>
+          <p class="mx-auto"> Visit Me </p>
           <a :href="amazonLink" target="_blank"><button class="view-button">My Website</button></a>
           </div>
         </div>
@@ -78,6 +77,13 @@ export default {
   </main>
 </template>
 <style lang="scss">
+a {
+  color: black !important;
+}
+
+a:visited {
+  color: black !important;
+}
 
 .main{
 display: grid;

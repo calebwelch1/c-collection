@@ -70,7 +70,7 @@ export default {
               class="art mx-auto"
               />
           <div class="info-box flex-col mx-auto">
-          <p> Viewing Options </p>
+          <p class="mx-auto"> Viewing Options </p>
           <a :href="amazonLink" target="_blank"><button class="view-button">Amazon</button></a>
           </div>
         </div>
