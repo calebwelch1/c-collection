@@ -7,7 +7,7 @@ import Footer from '@/components/Footer.vue'
 import { NCarousel } from 'naive-ui'
 
 export default {
-  name: 'BloodMeridian',
+  name: 'YourName',
   props:{
     mainImg: {
       type: String,
@@ -54,18 +54,10 @@ export default {
             <p style="font-size: 16px; color: #8e8e8e;"> Published 1985 </p>
           </div>
           <div id="contain-text" style="padding-left: 4rem; padding-right: 4rem;">
-            <p class="author gold"> Cormac McCarthy </p>
-            <h1 class="media-title"> Blood Meridian </h1>
+            <p class="author gold">  </p>
+            <h1 class="media-title"> Your Name </h1>
               <p class="content-text" style="display:block">
-              --- Vast, visceral, unrelenting. Cormac McCarthy's <strong> Blood Meridian </strong> is an American Western epic that
-              has to be experienced to be believed. The notoriously un-filmable novel follows a young man known only as 'the kid' as
-              he leaves home and joins the Glanton Gang, a rag-tag crew of mercenaries hired out by the American and Mexican frontier governments
-              to cull the local Native tribes who ride the desert plains and leave no soul alive in their wake. In America's old west
-              morality is grey, scalps are expensive, life is cheap, and survival is definitely not guaranteed. At times McCarthy's
-              writing is reminscent of biblical tales, and at others it cuts deep and quickly like the edge of a blade. Descriptions of vast and
-              beautiful landscapes will hang in your mind just as they are juxtaposed with scenes of the brutality of war. <strong> Blood Meridian </strong>
-              also introduces one of literature's most heinous and memorable villains <strong> THE JUDGE </strong>. Frequently cited as one of the 
-              best books of the 20th century <strong> Blood Meridian </strong> is a book I cannot recommend highly enough.
+              --- Your Name
               </p>
           </div>
           <div class="col-span-1" />
@@ -104,8 +96,7 @@ export default {
             <h1 class=""> Creator </h1>
             <div style="border-bottom: 2px solid black; width: 80%; margin-bottom: 3rem;"/>
             <p class="content-text" style="display:block; white-space: nowrap;">
-            <strong>Author</strong> ................................. Cormac McCarthy<br>
-            <strong>Pages</strong> .................................. 351
+            <strong>Director</strong> ................................. Cormac McCarthy<br>
             </p>
           </div>
           <div class="sub-content flex-col" style="height: 98vh; width: 100%; display: block; margin-top:auto; margin-bottom: auto; min-width: 0rem;">
