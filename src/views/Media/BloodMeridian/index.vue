@@ -112,14 +112,17 @@ export default {
             <h1 style="margin-bottom: 3rem;"> Related Media </h1>
             <div class="flex-wrap related-media-flex" style=";">
               <div class="related-media mx-auto flex-col justify-start">
-              <div style="height: 15rem; width: 9rem; background-color: black;" />
-              <p>Title</p>
-              <p class="creator-text">Creator</p>
+              <a target="_blank" href="https://www.imdb.com/title/tt0477348/?ref_=fn_al_tt_1">
+              <img src="@/assets/covers/noCountry.jpg" style="height: 15rem; width: 9rem; background-color: black;" />
+              </a>
+              <p>No Country for Old Men</p>
+              <p class="creator-text">Ethan Coen, Joel Coen</p>
               </div>
               <div class="related-media mx-auto flex-col justify-start">
-              <div style="height: 15rem; width: 9rem; background-color: black;" />
-              <p>Title</p>
-              <p class="creator-text">Creator</p>
+              <a target="_blank" href="https://www.wikiart.org/en/n-c-wyeth">
+              <img src="@/assets/covers/wyeth.jpg" style="height: 15rem; width: 9rem; background-color: black;" />
+              </a>
+              <p>N.C. Wyeth</p>
               </div>
             </div>
           </div>

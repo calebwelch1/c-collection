@@ -1,8 +1,8 @@
 <script>
 import demon from '@/assets/demon.jpg'
-import red from './assets/red.jpg'
-import cormac from './assets/cormac.jpeg'
-import cover from './assets/cover.jpg'
+import cover from './assets/yourNameCover.jpg'
+import stars from './assets/your_name_stars.jpg'
+import trailer from './assets/YourName-Trailer.mp4'
 import Footer from '@/components/Footer.vue'
 import { NCarousel } from 'naive-ui'
 
@@ -21,11 +21,11 @@ export default {
   },
   data() {
     return {
-      cormac,
-      red,
       cover,
-      shareLink: 'calebwelch1.github.io/c-collection/blood-meridian',
-      amazonLink: 'https://www.amazon.com/Blood-Meridian-Evening-Redness-West/dp/0679728759',
+      stars,
+      trailer,
+      shareLink: 'calebwelch1.github.io/c-collection/your-name',
+      amazonLink: 'https://www.amazon.com/gp/video/detail/B078SNJK8G/ref=atv_dp_share_cu_r',
     };
   },
   methods: {
@@ -49,15 +49,28 @@ export default {
           <div id="contain-share">
             <p> Share </p>
             <img @click="copyText" class="h-2 w-2" src="@/assets/icons/link.png" style="margin-top:0.4rem; margin: 1rem; cursor: pointer;" alt="images made by https://www.flaticon.com - Creaticca Creative Agency"/>
-            <p style="font-size: 18px; color: #cdcdcb; margin-bottom: 1rem;"> Book Info </p>
-            <p style="font-size: 16px; color: #8e8e8e;"> American </p>
-            <p style="font-size: 16px; color: #8e8e8e;"> Published 1985 </p>
+            <p style="font-size: 18px; color: #cdcdcb; margin-bottom: 1rem;"> Film Info </p>
+            <p style="font-size: 16px; color: #8e8e8e;"> Japanese </p>
+            <p style="font-size: 16px; color: #8e8e8e;"> Romance/Fantasy </p>
+            <p style="font-size: 16px; color: #8e8e8e;"> Released 2016 </p>
+            <p style="font-size: 16px; color: #8e8e8e;"> 107 minutes </p>
           </div>
           <div id="contain-text" style="padding-left: 4rem; padding-right: 4rem;">
-            <p class="author gold">  </p>
+            <p class="author gold"> Makoto Shinkai </p>
             <h1 class="media-title"> Your Name </h1>
               <p class="content-text" style="display:block">
-              --- Your Name
+              --- <strong>Your Name</strong> is one of those movies that hits you right in the gut and pulls at your heartstrings long after
+              you've finished watching it. With titanic titles like <a target="_blank" href="https://en.wikipedia.org/wiki/Spirited_Away"> Spirited Away </a>,
+              <a target="_blank" href="https://en.wikipedia.org/wiki/Perfect_Blue"> Perfect Blue </a>, and
+              <a target="_blank" href="https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film)"> Ghost in the Shell </a> in the japanese film animation industry
+              why did I choose to add <strong>Your Name</strong>? For the simple reason that it makes me tear up. Every. Single. Time. It begins as a cliche slice of life/coming
+              of age story about a highschool boy in Tokyo who wakes up one morning and has swapped bodies with a school girl from the countryside.  It quickly folows up
+              as a cosmic journey through time and space, and one that asks us who we are and how our relationships shape our identity. Where H.P Lovecraft's stories use 
+              the great expanse of the cosmos and forces beyond our comprehension to make us feel small and afraid, Shinkai's <strong>Your Name</strong> asks us,
+              "Even if we're small in the face of the Universe. Can love, courage, and our relationships with others still make our lives meaningful?" Seriously I 
+              started watching the movie twice, got bored and turned it off before finally powering through on the third try and I am so glad that I did. With a stellar
+              soundtrack from Radwimps that can stand completely on its own, Shinkai's moving story, and beautiful animation it is no wonder <strong>Your Name</strong>
+              slots in as the 4th highest grossing movie of all time in Japan and absolutely deserves a viewing (or three).
               </p>
           </div>
           <div class="col-span-1" />
@@ -85,8 +98,8 @@ export default {
         style="width: 80%; height: 85%; display: block; margin:auto;"
         show-arrow
         >
-          <img :src="red" class="c-image"/>
-          <img :src="cormac" class="c-image"/>
+          <video :src="trailer" class="c-image" controls preload="auto" type="video/mp4"/>
+          <img :src="stars" class="c-image"/>
           <img :src="cover" class="c-image"/>
         </n-carousel>
       </div>
@@ -95,21 +108,37 @@ export default {
           <div class="sub-content flex-col" style="height: 98vh; width: 100%; display: block; margin-top:auto; margin-bottom: auto;">
             <h1 class=""> Creator </h1>
             <div style="border-bottom: 2px solid black; width: 80%; margin-bottom: 3rem;"/>
-            <p class="content-text" style="display:block; white-space: nowrap;">
-            <strong>Director</strong> ................................. Cormac McCarthy<br>
+            <p class="content-text" style="display:block;">
+            <strong>Director</strong> ................................. Makoto Shinkai<br>
+            </p>
+            <h1 class=""> Cast </h1>
+            <div style="border-bottom: 2px solid black; width: 80%; margin-bottom: 3rem;"/>
+            <p class="content-text" style="display:block;">
+            <strong>Taki Tachibana (voice)</strong> ................................. Ryunosuke Kamiki<br>
+            <strong>Mitsuha Miyamizu (voice)</strong> ................................. Mone Kamishiraishi<br>
+            </p>
+            <h1 class=""> Credits </h1>
+            <div style="border-bottom: 2px solid black; width: 80%; margin-bottom: 3rem;"/>
+            <p class="content-text" style="display:block;">
+            <strong>Writer</strong> ................................. Makoto Shinkai<br>
+            <strong>Writer English Script</strong> ................................. Clark Cheng<br>
             </p>
           </div>
           <div class="sub-content flex-col" style="height: 98vh; width: 100%; display: block; margin-top:auto; margin-bottom: auto; min-width: 0rem;">
             <h1 style="margin-bottom: 3rem;"> Related Media </h1>
             <div class="flex-wrap related-media-flex" style=";">
               <div class="related-media mx-auto flex-col justify-start">
-              <div style="height: 15rem; width: 9rem; background-color: black;" />
-              <p>Title</p>
-              <p class="creator-text">Creator</p>
+              <a target="_blank" href="https://imdb.com/title/tt0119698/?fc=1;ft=21;fm=1">
+              <img src="@/assets/covers/mononoke.jpg" style="height: 15rem; width: 9rem; background-color: black;" />
+              </a>
+              <p>Princess Mononoke</p>
+              <p class="creator-text">Hayao Miyazaki</p>
               </div>
               <div class="related-media mx-auto flex-col justify-start">
-              <div style="height: 15rem; width: 9rem; background-color: black;" />
-              <p>Title</p>
+              <a target="_blank" href="https://www.imdb.com/title/tt1677561/?ref_=fn_al_tt_2">
+              <img src="@/assets/covers/colorful.jpg" style="height: 15rem; width: 9rem; background-color: black;" />
+              </a>
+              <p>Colorful</p>
               <p class="creator-text">Creator</p>
               </div>
             </div>
@@ -120,7 +149,15 @@ export default {
     </div>
   </main>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
+.content-text a {
+  color: black !important;
+}
+
+.content-text a:visited {
+  color: black !important;
+}
+
 
 .main{
 display: grid;

@@ -6,6 +6,7 @@ import mask from '@/assets/background/mask.jpg'
 import future from '@/assets/background/future.jpg'
 import swan from '@/assets/background/swan.jpg'
 import swanVid from '@/assets/video/black_swan_cut.mp4'
+import yourVid from '@/assets/video/your_name_trim.mp4'
 
 export default {
   name: 'TheWelcome',
@@ -26,11 +27,15 @@ export default {
       future,
       swan,
       swanVid,
+      yourVid,
     };
   },
   methods: {
     routeBloodMeridian(){
       this.$router.push('blood-meridian');
+    },
+    routeYourName(){
+      this.$router.push('your-name');
     },
   },
 }
@@ -49,10 +54,15 @@ C-Collection
   style="width: 100%; height: 100%"
   >
     <div class="relative" style="height: 100%; width: 100%;">
-      <video :src="swanVid" class="c-image"
+      <video :src="yourVid" class="c-image"
       autoplay="true" loop="true" preload="auto" muted="true" type="video/mp4"/>
+      <div class="absolute flex-col title-position" style="font-size: 48px;">
+        <h1 class="bebas white font-size-48 mx-auto" style="margin-bottom: 0rem;">Your Name</h1>
+        <p class="white font-size-20 mx-auto">Directed by Makoto Shinkai</p>
+        <button class="title-button" @click="routeYourName">Your Name</button>
+      </div>
     </div>
-    <div class="relative c-image">
+    <div class="relative" style="height: 100%; width: 100%;">
       <img :src="west" class="c-image"/>
       <div class="absolute flex-col title-position" style="font-size: 48px;">
       <h1 class="bebas white font-size-48 mx-auto" style="margin-bottom: 0rem;">Blood Meridian</h1>
@@ -60,11 +70,12 @@ C-Collection
       <button class="title-button" @click="routeBloodMeridian">BLOOD MERIDIAN</button>
       </div>
     </div>
-    <div class="relative c-image">
-      <img :src="future" class="c-image"/>
+    <div class="relative" style="height: 100%; width: 100%;">
+      <video :src="swanVid" class="c-image"
+      autoplay="true" loop="true" preload="auto" muted="true" type="video/mp4"/>
     </div>
     <div class="relative c-image">
-      <img :src="mask" class="c-image"/>
+      <img :src="future" class="c-image"/>
     </div>
   </n-carousel>
 </div>
@@ -110,7 +121,14 @@ C-Collection
 }
 .title-position {
   top: 30%;
-  left: 40%;
+  left: 45%;
+}
+
+@media screen and (max-width: 650px) {
+  .title-position {
+  top: 30%;
+  left: 25%;
+}
 }
 .mx-auto {
   margin-left: auto;
