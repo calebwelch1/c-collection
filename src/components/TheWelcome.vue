@@ -67,9 +67,9 @@ C-Collection
     </div>
     <div class="relative" style="height: 100%; width: 100%;">
       <img :src="west" class="c-image"/>
-      <div class="absolute flex-col title-position" style="font-size: 48px;">
+      <div class="absolute flex-col still-title-position" style="font-size: 48px;">
       <h1 class="bebas white font-size-48 mx-auto" style="margin-bottom: 0rem;">Blood Meridian</h1>
-      <p class="white font-size-20"> An unrelenting and visceral journey through America's old west. </p>
+      <p class="white font-size-20 mx-auto"> Written by Cormac McCarthy </p>
       <button class="title-button" @click="routeBloodMeridian">BLOOD MERIDIAN</button>
       </div>
     </div>
@@ -129,13 +129,23 @@ C-Collection
 }
 .title-position {
   top: 30%;
-  left: 45%;
+  left: 44%;
+}
+
+.still-title-position {
+  top: 30%;
+  left: 37%;
 }
 
 @media screen and (max-width: 650px) {
   .title-position {
   top: 30%;
   left: 25%;
+}
+
+.still-title-position {
+  top: 30%;
+  left: 22%;
 }
 }
 .mx-auto {
