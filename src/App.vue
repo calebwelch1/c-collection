@@ -23,9 +23,6 @@ export default {
     NMenu,
   },
   methods: {
-    routeAtomicCss(){
-      this.$router.push('atomic-css');
-    },
   },
   data() {
     return {

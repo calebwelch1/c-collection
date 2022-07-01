@@ -42,7 +42,7 @@ export default {
         <div class="sub-content flex-col" style="height: auto; width: 75%; display: block; margin-top:auto; margin-bottom: auto; padding-left: 4rem;">
           <h1> Links </h1>
          <div style="border-bottom: 2px solid #fff; width: 80%; margin-bottom: 3rem;"/>
-          <router-link to="/" class="content-text" style="display:block; white-space: nowrap; font-size: 20px; margin-top: 1rem;">
+          <router-link to="/home" class="content-text" style="display:block; white-space: nowrap; font-size: 20px; margin-top: 1rem;">
           <strong>Home</strong>
           </router-link>
           <router-link to="/about" class="content-text" style="display:block; white-space: nowrap; font-size: 20px; margin-top: 1rem;">
