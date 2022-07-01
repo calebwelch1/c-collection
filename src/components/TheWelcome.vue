@@ -59,26 +59,26 @@ C-Collection
     <div class="relative" style="height: 100%; width: 100%;">
       <video :src="yourVid" class="c-image"
       autoplay="true" loop="true" preload="auto" muted="true" type="video/mp4"/>
-      <div class="absolute flex-col title-position" style="font-size: 48px;">
-        <h1 class="bebas white font-size-48 mx-auto" style="margin-bottom: 0rem;">Your Name</h1>
-        <p class="white font-size-20 mx-auto">Directed by Makoto Shinkai</p>
+      <div class="absolute flex-col title-position">
+        <h1 class="bebas white mx-auto title-text" style="margin-bottom: 0rem;">Your Name</h1>
+        <p class="white mx-auto description-text">Directed by Makoto Shinkai</p>
         <button class="title-button" @click="routeYourName">Your Name</button>
       </div>
     </div>
     <div class="relative" style="height: 100%; width: 100%;">
       <img :src="west" class="c-image"/>
-      <div class="absolute flex-col still-title-position" style="font-size: 48px;">
-      <h1 class="bebas white font-size-48 mx-auto" style="margin-bottom: 0rem;">Blood Meridian</h1>
-      <p class="white font-size-20 mx-auto"> Written by Cormac McCarthy </p>
+      <div class="absolute flex-col still-title-position">
+      <h1 class="bebas white mx-auto title-text" style="margin-bottom: 0rem;">Blood Meridian</h1>
+      <p class="white mx-auto description-text"> Written by Cormac McCarthy </p>
       <button class="title-button" @click="routeBloodMeridian">BLOOD MERIDIAN</button>
       </div>
     </div>
     <div class="relative" style="height: 100%; width: 100%;">
       <video :src="swanVid" class="c-image"
       autoplay="true" loop="true" preload="auto" muted="true" type="video/mp4"/>
-      <div class="absolute flex-col title-position" style="font-size: 48px;">
-        <h1 class="bebas white font-size-48 mx-auto" style="margin-bottom: 0rem;">Black Swan</h1>
-        <p class="white font-size-20 mx-auto">Directed by Darren Aronofsky</p>
+      <div class="absolute flex-col title-position">
+        <h1 class="bebas white mx-auto title-text" style="margin-bottom: 0rem;">Black Swan</h1>
+        <p class="white mx-auto description-text">Directed by Darren Aronofsky</p>
         <button class="title-button" @click="routeBlackSwan">Black Swan</button>
       </div>
     </div>
@@ -129,7 +129,15 @@ C-Collection
 }
 .title-position {
   top: 30%;
-  left: 44%;
+  left: 42%;
+}
+
+.title-text {
+  font-size: 5rem;
+}
+
+.description-text {
+  font-size: 2rem;
 }
 
 .still-title-position {
@@ -146,6 +154,14 @@ C-Collection
 .still-title-position {
   top: 30%;
   left: 22%;
+}
+
+.title-text {
+  font-size: 3.5rem;
+}
+
+.description-text {
+  font-size: 1.5rem;
 }
 }
 .mx-auto {

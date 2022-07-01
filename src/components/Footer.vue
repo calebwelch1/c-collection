@@ -45,7 +45,7 @@ export default {
           <router-link to="/home" class="content-text" style="display:block; white-space: nowrap; font-size: 20px; margin-top: 1rem;">
           <strong>Home</strong>
           </router-link>
-          <router-link to="/about" class="content-text" style="display:block; white-space: nowrap; font-size: 20px; margin-top: 1rem;">
+          <router-link to="/" class="content-text" style="display:block; white-space: nowrap; font-size: 20px; margin-top: 1rem;">
           <strong>About</strong>
           </router-link>
           <router-link to="/contact" class="content-text" style="display:block; white-space: nowrap; font-size: 20px; margin-top: 1rem;">

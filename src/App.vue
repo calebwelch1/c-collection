@@ -48,10 +48,10 @@ export default {
       {
         label: () => h(RouterLink, {
           to: {
-            name: 'about-view',
+            name: 'opener',
           },
         }, "About"),
-        key: "about",
+        key: "opener",
       },
        {
         label: () => h(RouterLink, {
