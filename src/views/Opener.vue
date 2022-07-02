@@ -19,7 +19,7 @@ export default {
     <div class="main">
         <div class="relative" style="height: 100%; width: 100%;">
             <video :src="gradientVid" class="c-image"
-            autoplay="true" loop="true" preload="auto" muted="true" type="video/mp4"/>
+            autoplay="true" loop="true" preload="auto" muted="true" type="video/mp4" poster="@/assets/poster/gradient-poster.jpg"/>
                 <div class="absolute flex-col title-position my-auto" style="font-size: 48px;">
                     <h1 class="bebas white font-size-48 mx-auto" style="margin-bottom: 0rem;">The Caleb-Collection</h1>
                     <p class="white font-size-30 mx-auto bebas">What is The Caleb Collection?</p>
