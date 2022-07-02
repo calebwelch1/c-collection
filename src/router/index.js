@@ -32,6 +32,11 @@ const router = createRouter({
       name: 'contact-view',
       component: () => import('../views/ContactView.vue')
     },
+    {
+      path: '/archive',
+      name: 'archive-view',
+      component: () => import('../views/Archive/index.vue')
+    },
     // media
     {
       path: '/blood-meridian',

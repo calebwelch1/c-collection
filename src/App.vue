@@ -48,6 +48,14 @@ export default {
       {
         label: () => h(RouterLink, {
           to: {
+            name: 'archive-view',
+          },
+        }, "Archive"),
+        key: "archive",
+      },
+      {
+        label: () => h(RouterLink, {
+          to: {
             name: 'opener',
           },
         }, "About"),
