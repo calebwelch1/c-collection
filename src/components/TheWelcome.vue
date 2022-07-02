@@ -58,7 +58,7 @@ C-Collection
   >
     <div class="relative" style="height: 100%; width: 100%;">
       <video :src="yourVid" class="c-image"
-      autoplay="true" loop="true" preload="auto" muted="true" type="video/mp4"/>
+      autoplay="true" loop="true" preload muted="true" type="video/mp4"/>
       <div class="absolute flex-col title-position">
         <h1 class="bebas white mx-auto title-text" style="margin-bottom: 0rem;">Your Name</h1>
         <p class="white mx-auto description-text">Directed by Makoto Shinkai</p>
@@ -75,7 +75,7 @@ C-Collection
     </div>
     <div class="relative" style="height: 100%; width: 100%;">
       <video :src="swanVid" class="c-image"
-      autoplay="true" loop="true" preload="auto" muted="true" type="video/mp4"/>
+      autoplay="true" loop="true" preload muted="true" type="video/mp4"/>
       <div class="absolute flex-col title-position">
         <h1 class="bebas white mx-auto title-text" style="margin-bottom: 0rem;">Black Swan</h1>
         <p class="white mx-auto description-text">Directed by Darren Aronofsky</p>
