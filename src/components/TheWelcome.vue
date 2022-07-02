@@ -128,7 +128,7 @@ C-Collection
     }
 }
 .title-position {
-  top: 30%;
+  top: 25%;
   left: 42%;
 }
 
@@ -141,8 +141,8 @@ C-Collection
 }
 
 .still-title-position {
-  top: 30%;
-  left: 37%;
+  top: 25%;
+  left: 39%;
 }
 
 @media screen and (max-width: 650px) {
