@@ -38,10 +38,16 @@ const router = createRouter({
       component: () => import('../views/Archive/index.vue')
     },
     // media
+    // books
     {
       path: '/blood-meridian',
       name: 'blood-meridian',
       component: () => import('../views/media/BloodMeridian/index.vue')
+    },
+    {
+      path: '/cant-hurt-me',
+      name: 'cant-hurt-me',
+      component: () => import('../views/media/CantHurtMe/index.vue')
     },
     // movies
     {

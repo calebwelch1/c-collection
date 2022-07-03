@@ -7,6 +7,7 @@ import future from '@/assets/background/future.jpg'
 import swan from '@/assets/background/swan.jpg'
 import swanVid from '@/assets/video/black_swan_cut.mp4'
 import yourVid from '@/assets/video/your_name_trim.mp4'
+import gogginsVid from '@/assets/video/goggins_trim.mp4'
 
 export default {
   name: 'TheWelcome',
@@ -28,6 +29,7 @@ export default {
       swan,
       swanVid,
       yourVid,
+      gogginsVid,
     };
   },
   methods: {
@@ -39,6 +41,9 @@ export default {
     },
     routeBlackSwan(){
       this.$router.push('black-swan');
+    },
+    routeCantHurtMe(){
+      this.$router.push('cant-hurt-me');
     },
   },
 }
@@ -63,6 +68,15 @@ C-Collection
         <h1 class="bebas white mx-auto title-text" style="margin-bottom: 0rem;">Your Name</h1>
         <p class="white mx-auto description-text">Directed by Makoto Shinkai</p>
         <button class="title-button" @click="routeYourName">Your Name</button>
+      </div>
+    </div>
+    <div class="relative" style="height: 100%; width: 100%;">
+      <video :src="gogginsVid" class="c-image"
+      autoplay="true" loop="true" preload muted="true" type="video/mp4" poster="@/assets/poster/goggins-poster.jpg"/>
+      <div class="absolute flex-col title-position">
+        <h1 class="bebas white mx-auto title-text" style="margin-bottom: 0rem;">Can't Hurt Me</h1>
+        <p class="white mx-auto description-text">Written by David Goggins</p>
+        <button class="title-button" @click="routeCantHurtMe">Can't Hurt Me</button>
       </div>
     </div>
     <div class="relative" style="height: 100%; width: 100%;">
