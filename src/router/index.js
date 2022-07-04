@@ -12,7 +12,7 @@ const router = createRouter({
     {
       path: '/home',
       name: 'home',
-      component: HomeView,
+      component: () => import('../views/HomeView.vue')
     },
     // {
     //   path: '/about',
@@ -48,6 +48,11 @@ const router = createRouter({
       path: '/cant-hurt-me',
       name: 'cant-hurt-me',
       component: () => import('../views/media/CantHurtMe/index.vue')
+    },
+    {
+      path: '/rockwell',
+      name: 'rockwell',
+      component: () => import('../views/media/Rockwell/index.vue')
     },
     // movies
     {

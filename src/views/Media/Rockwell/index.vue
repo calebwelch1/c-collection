@@ -7,7 +7,7 @@ import Footer from '@/components/Footer.vue'
 import { NCarousel } from 'naive-ui'
 
 export default {
-  name: 'CantHurtMe',
+  name: 'Rockwell',
   props:{
     mainImg: {
       type: String,
@@ -24,8 +24,8 @@ export default {
       cover,
       gogginsBeforeAfter,
       trailer,
-      shareLink: 'calebwelch1.github.io/c-collection/cant-hurt-me',
-      amazonLink: 'https://www.amazon.com/Cant-Hurt-Me-Master-Your/dp/1544512287',
+      shareLink: 'calebwelch1.github.io/c-collection/rockwell',
+      amazonLink: 'https://www.amazon.com/My-Adventures-Illustrator-Norman-Rockwell/dp/0810925966',
     };
   },
   methods: {
@@ -51,23 +51,25 @@ export default {
             <img @click="copyText" class="h-2 w-2" src="@/assets/icons/link.png" style="margin-top:0.4rem; margin: 1rem; cursor: pointer;" alt="images made by https://www.flaticon.com - Creaticca Creative Agency"/>
             <p style="font-size: 18px; color: #cdcdcb; margin-bottom: 1rem;"> Book Info </p>
             <p style="font-size: 16px; color: #8e8e8e;"> American </p>
-            <p style="font-size: 16px; color: #8e8e8e;"> Motivational Self-Help </p>
-            <p style="font-size: 16px; color: #8e8e8e;"> Published 2018 </p>
-            <p style="font-size: 16px; color: #8e8e8e;"> 366 Pages </p>
+            <p style="font-size: 16px; color: #8e8e8e;"> Autobiography </p>
+            <p style="font-size: 16px; color: #8e8e8e;"> Originally Published 1960 </p>
+            <p style="font-size: 16px; color: #8e8e8e;"> 526 Pages </p>
           </div>
           <div id="contain-text" style="padding-left: 4rem; padding-right: 4rem;">
-            <p class="author gold"> David Goggins </p>
-            <h1 class="media-title"> Can't Hurt Me </h1>
+            <p class="author gold"> Norman Rockwell </p>
+            <h1 class="media-title"> My Adventures as an Illustrator </h1>
               <p class="content-text" style="display:block">
-              --- There is no shortage of things we can't choose in life. Our biology, our parents, our place of birth, even our aptitudes to excel or lag behind
-              others are largely decided long before we are even conscious of them. As children we are often traumatized by the things we can't control, people
-              can treat us horribly, environment can deprive us, experiences can scar, and these traumas follow and haunt us into adulthood.
-              <strong>Can't Hurt Me</strong> is the story of a man who used his trauma to become one of the most inspirational figures in America. David Goggins' story
-              is incredible and it
-              reminds us that despite the fact we have no choice in many things, we always have the choice to leverage our past to become a better version of ourself.
-              Instead of wallowing in victomhood we can use the experiences that burden us as fuel to overcome and become someone who can inspire and help uplift others
-              who are mired in their own less than ideal circumstances. This book helped me through one of the toughest times in my life and now I still return to this
-              work to remind myself of what I'm capable of. Despite seemingly insurmountable odds, the human will can prevail.
+              --- Master of composition, storytelling, and subtle emotion American Golden Age Illustrator Norman Rockwell recounts his life journey
+              in learning from, and becoming one of the most iconic artists in America. Rockwell's intensely relatable story gives us insight into
+              his personality growing up. The man was beset by anxiety and doubt over his own talents for the majority of his career. The tale of 
+              Rockwell getting cold feet, and almost not submitting his portfolio to the Saturday Evening Post is one that fills me with determination.
+              If one of the most famous artists in history was nervous at one time in his career, I suppose it's alright for me to be too.
+              What surprised me most was how much of an everyman Rockwell was. At the time there was no internet, no vast archives of reference photos or
+              3d models of historical figures to work from. Rockwell had to convince people whom he wanted to paint, to adorn costumes and sit for him. Later on
+              he would become an adept photographer as well to capture the reference photos he would paint from for dozens or hundreds of hours. It is easy to
+              look at golden age illustration and remember how far America fell short of delivering it's promise of freedom for all during those times, but don't
+              confuse Rockwell for one of those who engaged in bigotry and hatred. Rockwell would famously find creative ways of making African Americans the protagonists
+              in his Saturday Evening Post covers when his employers prohibited it and during a time when racial inequity was rampant.
               </p>
           </div>
           <div class="col-span-1" />
@@ -105,25 +107,26 @@ export default {
             <h1 class=""> Creator </h1>
             <div style="border-bottom: 2px solid black; width: 80%; margin-bottom: 3rem;"/>
             <p class="content-text" style="display:block;">
-              <strong>Writer</strong> ................................. David Goggins<br>
+              <strong>Writer</strong> ................................. Norman Rockwell<br>
+              <strong>As told to</strong> ................................. Tom Rockwell<br>
             </p>
           </div>
           <div class="sub-content flex-col" style="height: 98vh; width: 100%; display: block; margin-top:auto; margin-bottom: auto; min-width: 0rem;">
             <h1 style="margin-bottom: 3rem;"> Related Media </h1>
             <div class="flex-wrap related-media-flex" style=";">
               <div class="related-media mx-auto flex-col justify-start">
-              <a target="_blank" href="https://youtu.be/5tSTk1083VY">
-              <img src="./assets/jre1080.jpg" style="height: 12rem; width: 15rem; background-color: black;" />
+              <a target="_blank" href="https://www.wikiart.org/en/norman-rockwell">
+              <img src="./assets/southern-justice.jpg" style="height: 15rem; width: 9rem; background-color: black;" />
               </a>
-              <p>Joe Rogan Experience Appearance</p>
-              <p class="creator-text">Feb 19, 2018</p>
+              <p>WikiArt</p>
+              <p class="creator-text">Norman Rockwell</p>
               </div>
               <div class="related-media mx-auto flex-col justify-start">
-              <a target="_blank" href="https://youtu.be/BvWB7B8tXK8">
-              <img src="./assets/jre1212.jpg" style="height: 12rem; width: 15rem; background-color: black;" />
+              <a target="_blank" href="https://www.wikiart.org/en/j-c-leyendecker">
+              <img src="./assets/leyendecker.png" style="height: 15rem; width: 9rem; background-color: black;" />
               </a>
-              <p>Joe Rogan Experience Appearance</p>
-              <p class="creator-text">Dec 5, 2018</p>
+              <p>WikiArt</p>
+              <p class="creator-text">J.C Leyendecker</p>
               </div>
             </div>
           </div>

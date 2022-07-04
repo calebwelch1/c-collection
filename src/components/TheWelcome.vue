@@ -8,6 +8,7 @@ import swan from '@/assets/background/swan.jpg'
 import swanVid from '@/assets/video/black_swan_cut.mp4'
 import yourVid from '@/assets/video/your_name_trim.mp4'
 import gogginsVid from '@/assets/video/goggins_trim.mp4'
+import rockwellVid from '@/assets/video/rockwell_trim.mp4'
 
 export default {
   name: 'TheWelcome',
@@ -30,6 +31,7 @@ export default {
       swanVid,
       yourVid,
       gogginsVid,
+      rockwellVid,
     };
   },
   methods: {
@@ -44,6 +46,9 @@ export default {
     },
     routeCantHurtMe(){
       this.$router.push('cant-hurt-me');
+    },
+    routeRockwell(){
+      this.$router.push('rockwell');
     },
   },
 }
@@ -96,6 +101,15 @@ C-Collection
         <button class="title-button" @click="routeBlackSwan">Black Swan</button>
       </div>
     </div>
+        <div class="relative" style="height: 100%; width: 100%;">
+      <video :src="rockwellVid" class="c-image"
+      autoplay="true" loop="true" preload muted="true" type="video/mp4" poster="@/assets/poster/golden_rule.jpg"/>
+      <div class="absolute flex-col title-position-long">
+        <h1 class="bebas white mx-auto title-text" style="margin-bottom: 0rem; text-align:center;">My Adventure's <br>as an Illustrator</h1>
+        <p class="white mx-auto description-text">Norman Rockwell</p>
+        <button class="title-button" @click="routeRockwell">My Adventure's as an Illustrator</button>
+      </div>
+    </div>
     <!--<div class="relative c-image">
       <img :src="future" class="c-image"/>
     </div> -->
@@ -146,6 +160,11 @@ C-Collection
   left: 42%;
 }
 
+.title-position-long {
+  top: 15%;
+  left: 38%;
+}
+
 .title-text {
   font-size: 5rem;
 }
@@ -163,6 +182,11 @@ C-Collection
   .title-position {
   top: 30%;
   left: 25%;
+}
+
+.title-position-long {
+  top: 15%;
+  left: 10%;
 }
 
 .still-title-position {
