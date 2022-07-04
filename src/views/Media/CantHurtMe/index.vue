@@ -62,10 +62,12 @@ export default {
               --- There is no shortage of things we can't choose in life. Our biology, our parents, our place of birth, even our aptitudes to excel or lag behind
               others are largely decided long before we are even conscious of them. As children we are often traumatized by the things we can't control, people
               can treat us horribly, environment can deprive us, experiences can scar, and these traumas follow and haunt us into adulthood.
-              <strong>Can't Hurt Me</strong> is the story of a man who used his trauma to become one of the most inspirational figures in America. David Goggins
+              <strong>Can't Hurt Me</strong> is the story of a man who used his trauma to become one of the most inspirational figures in America. David Goggins' story
+              is incredible and it
               reminds us that despite the fact we have no choice in many things, we always have the choice to leverage our past to become a better version of ourself.
-              Instead of wallowing in victomhood we can use our past as fuel to overcome and become someone who can inspire and help uplift others who are mired
-              in their own issues and less than ideal circumstances.
+              Instead of wallowing in victomhood we can use the experiences that burden us as fuel to overcome and become someone who can inspire and help uplift others
+              who are mired in their own less than ideal circumstances. This book helped me through one of the toughest times in my life and now I still return to this
+              work to remind myself of what I'm capable of. Despite seemingly insurmountable odds, the human will can prevail.
               </p>
           </div>
           <div class="col-span-1" />
@@ -110,18 +112,18 @@ export default {
             <h1 style="margin-bottom: 3rem;"> Related Media </h1>
             <div class="flex-wrap related-media-flex" style=";">
               <div class="related-media mx-auto flex-col justify-start">
-              <a target="_blank" href="https://imdb.com/title/tt0119698/?fc=1;ft=21;fm=1">
-              <img src="@/assets/covers/mononoke.jpg" style="height: 15rem; width: 9rem; background-color: black;" />
+              <a target="_blank" href="https://youtu.be/5tSTk1083VY">
+              <img src="./assets/jre1080.jpg" style="height: 12rem; width: 15rem; background-color: black;" />
               </a>
-              <p>Princess Mononoke</p>
-              <p class="creator-text">Hayao Miyazaki</p>
+              <p>Joe Rogan Experience Appearance</p>
+              <p class="creator-text">Feb 19, 2018</p>
               </div>
               <div class="related-media mx-auto flex-col justify-start">
-              <a target="_blank" href="https://www.imdb.com/title/tt1677561/?ref_=fn_al_tt_2">
-              <img src="@/assets/covers/colorful.jpg" style="height: 15rem; width: 9rem; background-color: black;" />
+              <a target="_blank" href="https://youtu.be/BvWB7B8tXK8">
+              <img src="./assets/jre1212.jpg" style="height: 12rem; width: 15rem; background-color: black;" />
               </a>
-              <p>Colorful</p>
-              <p class="creator-text">Creator</p>
+              <p>Joe Rogan Experience Appearance</p>
+              <p class="creator-text">Dec 5, 2018</p>
               </div>
             </div>
           </div>
