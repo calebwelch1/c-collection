@@ -1,9 +1,10 @@
 <script>
 import demon from '@/assets/demon.jpg'
-import cover from '@/assets/covers/cant-hurt-me-cover.jpg'
-import trailer from './assets/goggins_inspo.mp4'
-import gogginsBeforeAfter from './assets/goggins-before-after.jpg'
+import cover from '@/assets/covers/rockwell_cover.jpg'
 import Footer from '@/components/Footer.vue'
+import charwoman from './assets/charwoman.jpg'
+import freedom from './assets/freedom.jpg'
+import southern from './assets/southern.jpg'
 import { NCarousel } from 'naive-ui'
 
 export default {
@@ -22,8 +23,9 @@ export default {
   data() {
     return {
       cover,
-      gogginsBeforeAfter,
-      trailer,
+      charwoman,
+      southern,
+      freedom,
       shareLink: 'calebwelch1.github.io/c-collection/rockwell',
       amazonLink: 'https://www.amazon.com/My-Adventures-Illustrator-Norman-Rockwell/dp/0810925966',
     };
@@ -97,8 +99,9 @@ export default {
         style="width: 80%; height: 85%; display: block; margin:auto;"
         show-arrow
         >
-          <video :src="trailer" class="c-image" controls preload="auto" type="video/mp4"/>
-          <img :src="gogginsBeforeAfter" class="c-image"/>
+          <img :src="southern" class="c-image"/>
+          <img :src="freedom" class="c-image"/>
+          <img :src="charwoman" class="c-image"/>
         </n-carousel>
       </div>
       <div class="col-span-12" style="margin-left: 2rem; margin-right: 2rem; height: auto; width: 100;">
@@ -331,7 +334,9 @@ grid-template-columns: repeat(12, minmax(0, 1fr));
 
 .c-image {
   object-fit: cover;
-  width:100%;
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
   height: 95%;
 }
 
